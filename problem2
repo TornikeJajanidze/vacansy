@@ -1,0 +1,25 @@
+public static int maxNumberOfCoins(int entryMoney){
+     int totalCoins=0;
+     if(entryMoney/50!=0){
+         totalCoins+=entryMoney/50;
+         entryMoney=entryMoney%50;
+     }
+     if(entryMoney/20!=0){
+         totalCoins+=entryMoney/20;
+         entryMoney=entryMoney%20;
+     }
+     if(entryMoney/10!=0){
+         totalCoins+=entryMoney/10;
+         entryMoney=entryMoney%10;
+     }
+     if(entryMoney/5!=0){
+         totalCoins+=entryMoney/5;
+         entryMoney=entryMoney%5;
+     }
+     if(entryMoney/1!=0){
+         totalCoins+=entryMoney;
+
+     }
+     return totalCoins;
+
+ }
