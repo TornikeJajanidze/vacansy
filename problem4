@@ -1,0 +1,11 @@
+ public static boolean isProperly(String sequence){
+     int numberOfOpenings=0;
+     int numberOfClosings=0;
+     for (int i=0; i<sequence.length(); i++){
+         if (sequence.charAt(i)=='('){ numberOfOpenings++;}
+         if (sequence.charAt(i)==')'){ numberOfClosings++;}
+         if(numberOfClosings>numberOfOpenings){ return false;}
+     }
+     if(numberOfClosings!=numberOfOpenings){return false;}
+     return true;
+ }
