@@ -1,9 +1,5 @@
 package com.company;
-
-
-
 public class Main {
-
   public static int countVariants(int stearsCount){
       //base cases
       if(stearsCount==0){ return 1;}
