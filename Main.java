@@ -1,3 +1,5 @@
+//problem 5 
+
 package com.company;
 public class Main {
   public static int countVariants(int stearsCount){
@@ -13,7 +15,5 @@ public class Main {
         System.out.println(countVariants(4));
         System.out.println(countVariants(5));
         System.out.println(countVariants(6));
-
-
      }
  }
